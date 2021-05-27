@@ -12,6 +12,7 @@ export class RecipeListComponent implements OnInit {
 
   @Output() recipeWasSelected = new EventEmitter<Recipe>();
   recipes: Recipe[];
+  
   constructor(private recipeService: RecipeService,
     private router: Router,
     private route: ActivatedRoute) { }
